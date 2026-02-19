@@ -63,7 +63,7 @@ pub struct OptimizerState {
     /// Named scalar values (step count, hyperparameters, etc.)
     pub scalars: HashMap<String, f64>,
     /// Named f64 buffers (momentum vectors, second moment estimates, etc.)
-    /// Each buffer is flattened to a single Vec<f64>; the key encodes
+    /// Each buffer is flattened to a single `Vec<f64>`; the key encodes
     /// the parameter index: e.g., "m.0", "m.1", "v.0", "v.1".
     pub buffers: HashMap<String, Vec<f64>>,
 }
